@@ -4,7 +4,7 @@
  */
 
 import java.util.Scanner;
-import java.lang.Math.*;
+
 /**
  * Class for solution.
  */
@@ -20,8 +20,8 @@ class Solution {
         double root1, root2;
         int y = b * b - 4 * a * c;
         
-             root1 = (-b + Math.sqrt(y)) / (2 * a);
-             root2 = (-b - Math.sqrt(y)) / (2 * a);
+             root1 = (-b + java.lang.Math.sqrt(y)) / (2 * a);
+             root2 = (-b - java.lang.Math.sqrt(y)) / (2 * a);
             System.out.println(root1 + " " + root2);
         }
     public static void main(String[] args) {
