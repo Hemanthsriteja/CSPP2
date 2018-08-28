@@ -1,16 +1,22 @@
+/**
+ * { item_description }
+ */
 import java.util.Scanner;
 
 public class Solution {
-
-
 	/*
 	Do not modify this main function.
 	*/
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);      
+		Scanner s = new Scanner(System.in);      
         int base = s.nextInt();
         int exponent = s.nextInt();
-        long result=power(base,exponent);
+        long result = power(base,exponent);
         System.out.println(result);
 	}
 	/*
@@ -18,7 +24,7 @@ public class Solution {
 	*/
 	public static long power(int base, int exponent)
 	{
-		if(exponent!=0){
+		if(exponent != 0){
 			return base * power(base,exponent-1);
 		}
 		else {
