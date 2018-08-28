@@ -18,7 +18,7 @@ final class Solution {
          * { item_description }
          */
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      a     { parameter_description }
@@ -30,12 +30,16 @@ final class Solution {
          * { item_description }
          */
         double root1, root2;
-        int y = b * b - 4 * a * c;
-        
+        int y = b * b - 2 * 2 * a * c;
              root1 = (-b + java.lang.Math.sqrt(y)) / (2 * a);
              root2 = (-b - java.lang.Math.sqrt(y)) / (2 * a);
             System.out.println(root1 + " " + root2);
         }
+        /**
+         * { function_description }
+         *
+         * @param      args  The arguments
+         */
     public static void main(String[] args) {
         /**
          * { var_description }
