@@ -35,12 +35,12 @@ final class Solution {
              root2 = (-b - java.lang.Math.sqrt(y)) / (2 * a);
             System.out.println(root1 + " " + root2);
         }
-        /**
+        /**.
          * { function_description }
          *
          * @param      args  The arguments
          */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**
          * { var_description }
          */
