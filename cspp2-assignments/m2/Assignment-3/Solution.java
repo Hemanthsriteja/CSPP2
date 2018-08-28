@@ -26,7 +26,6 @@ public final class Solution {
         long result = power(base, exponent);
         System.out.println(result);
     }
-    
     /**.
      * { function_description }
      *
