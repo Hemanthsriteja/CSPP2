@@ -10,15 +10,8 @@ import java.util.Scanner;
  */
 
 class Solution {
-    /*
-    Do not modify this main function.
-    */
     /**
-     * { function_description }
-     *
-     * @param      a     { parameter_description }
-     * @param      b     { parameter_description }
-     * @param      c     { parameter_description }
+     * Constructs the object.
      */
     private Solution() {
         /**
