@@ -29,11 +29,10 @@ public final class Solution {
     /*
     Need to write the power function and print the output.
     */
-    public static long power(int base, int exponent)
+    public static long power(final int base,final int exponent)
     /**
      * { item_description }
-     */
-    {
+     */ {
         if(exponent != 0){
             return base * power(base,exponent-1);
         }
