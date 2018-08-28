@@ -13,6 +13,18 @@ class Solution {
     /*
     Do not modify this main function.
     */
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     */
+    private Solution() {
+        /**
+         * { item_description }
+         */
+    }
     public static void rootsOfQuadraticEquation(final int a, final int b, final int  c) {
         /**
          * { item_description }
