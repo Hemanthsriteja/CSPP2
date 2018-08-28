@@ -7,11 +7,11 @@ import java.lang.Math.*;
  * Class for solution.
  */
 
-public class Solution {
+class Solution {
     /*
     Do not modify this main function.
     */
-    public static void rootsOfQuadraticEquation(int a, int b,int  c){
+    public static void rootsOfQuadraticEquation(int a, int b,int  c) {
         /**
          * { item_description }
          */
@@ -21,8 +21,7 @@ public class Solution {
              root1 = (-b + Math.sqrt(y)) / (2 * a);
              root2 = (-b - Math.sqrt(y)) / (2 * a);
             System.out.println(root1+" "+root2);
-        
-}
+        }
     public static void main(String[] args)
      {
         /**
@@ -38,3 +37,4 @@ public class Solution {
     Need to write the rootsOfQuadraticEquation function and print the output.
     */
 }
+
