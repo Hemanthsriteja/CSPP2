@@ -25,7 +25,7 @@ final class Solution {
      * @param      b     { parameter_description }
      * @param      c     { parameter_description }
      */
-    public static void QuadR(final int a, final int b, final int  c) {
+    public static void rootQuad(final int a, final int b, final int  c) {
         /**
          * { item_description }
          */
@@ -48,7 +48,7 @@ final class Solution {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        QuadR(a, b, c);
+        rootQuad(a, b, c);
     }
     /*
     Need to write the rootsOfQuadraticEquation function and print the output.
