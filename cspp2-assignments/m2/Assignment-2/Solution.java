@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Class for solution.
  */
 
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -18,6 +18,13 @@ class Solution {
          * { item_description }
          */
     }
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     */
     public static void rootsOfQuadraticEquation(final int a, final int b, final int  c) {
         /**
          * { item_description }
