@@ -11,7 +11,7 @@ class Solution {
     /*
     Do not modify this main function.
     */
-    public static void rootsOfQuadraticEquation(int a, int b,int  c) {
+    public static void rootsOfQuadraticEquation(final int a, final int b, final int  c) {
         /**
          * { item_description }
          */
