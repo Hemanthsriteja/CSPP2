@@ -20,10 +20,9 @@ class Solution {
         
              root1 = (-b + Math.sqrt(y)) / (2 * a);
              root2 = (-b - Math.sqrt(y)) / (2 * a);
-            System.out.println(root1+" "+root2);
+            System.out.println(root1 + " " + root2);
         }
-    public static void main(String[] args)
-     {
+    public static void main(String[] args) {
         /**
          * { var_description }
          */
