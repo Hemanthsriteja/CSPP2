@@ -1,17 +1,25 @@
+/**
+ * { item_description }
+ */
 import java.util.Scanner;
 import java.lang.Math.*;
-
+/**
+ * Class for solution.
+ */
 
 public class Solution {
     /*
     Do not modify this main function.
     */
     public static void rootsOfQuadraticEquation(int a, int b,int  c){
+        /**
+         * { item_description }
+         */
         double root1, root2;
-        int y = b*b - 4*a*c;
+        int y = b * b - 4 * a * c;
         
-             root1 = (-b + Math.sqrt(y))/(2*a);
-             root2 = (-b - Math.sqrt(y))/(2*a);
+             root1 = (-b + Math.sqrt(y)) / (2 * a);
+             root2 = (-b - Math.sqrt(y)) / (2 * a);
             System.out.println(root1+" "+root2);
         
 }
