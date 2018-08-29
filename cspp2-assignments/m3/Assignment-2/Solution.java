@@ -16,8 +16,7 @@ public final class  Solution {
     /**
      * Constructs the object.
      */
-    private Solution()
-    {
+    private Solution() {
         /**
          * { item_description }
          */
@@ -34,25 +33,25 @@ public final class  Solution {
      * { item_description }
      */
 /* Fill the main function to print the number of 7's between 1 to n*/
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * { var_description }
          */
 
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         //System.out.println(n.length);
 
         int i;
-        int count = 0; 
-        int count2 = 0; 
+        int count = 0;
+        int count2 = 0;
         for(i = 1;i <= n;i++) {
-            int temp = i; 
+            int temp = i;
             while(temp != 0) {
                 if (temp % TEN == SEVEN) {
                 count = count + 1; 
