@@ -50,13 +50,13 @@ public final class  Solution {
         int i;
         int count = 0;
         int count2 = 0;
-        for(i = 1;i <= n;i++) {
+        for (i = 1 ; i <= n ; i++) {
             int temp = i;
-            while(temp != 0) {
+            while (temp != 0) {
                 if (temp % TEN == SEVEN) {
-                count = count + 1; 
+                count = count + 1;
             }
-                temp = temp / TEN; 
+                temp = temp / TEN;
             }
 
             }
