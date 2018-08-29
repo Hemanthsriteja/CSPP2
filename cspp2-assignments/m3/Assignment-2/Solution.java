@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+/*
+	Do not modify this main function.
+	*/
+public class Solution {
+/* Fill the main function to print the number of 7's between 1 to n*/
+    public static void main(String[] args) {
+
+        Scanner s=new Scanner(System.in);      
+        int n = s.nextInt();
+        //System.out.println(n.length);
+
+        int i;
+        int count = 0;
+        int count2 = 0;
+        for(i=1;i<=n;i++){
+        	int temp = i;
+        	while(temp!=0)
+        	{
+        		if(temp%10==7)
+        		{
+        		count = count+1;
+        	}
+        		temp = temp/10;
+        	}
+
+        	}
+        	System.out.println(count);
+        	}
+        }
+        	
