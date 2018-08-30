@@ -1,15 +1,32 @@
 
 import java.util.Scanner;
-public final class Solution
-{/*
-    Fill this main function to print maximum of given array
-    */
+/**.
+ * { item_description }
+ */
+public final class Solution {
+    /**.
+     * { item_description }
+     */
+
+    /**.
+     * Constructs the object.
+     */
     private Solution()
     {
-
+        /**.
+         * { item_description }
+         */
     }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args)
     {
+        /**.
+         * { var_description }
+         */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int a[] = new int[n];
