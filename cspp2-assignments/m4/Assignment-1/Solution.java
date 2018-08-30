@@ -27,7 +27,7 @@ public final class Solution {
          */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int []a = new int[n];
+        int[]a = new int[n];
         int i, max;
         for (i = 0; i < a.length; i++) {
 
