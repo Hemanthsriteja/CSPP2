@@ -11,8 +11,7 @@ public final class Solution {
     /**.
      * Constructs the object.
      */
-    private Solution()
-    {
+    private Solution() {
         /**.
          * { item_description }
          */
@@ -22,14 +21,13 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args)
-    {
+    public static void main(final String[] args) {
         /**.
          * { var_description }
          */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a[] = new int[n];
+        int [] a = new int[n];
         int i, max;
         for (i = 0; i < a.length; i++) {
 
@@ -37,7 +35,7 @@ public final class Solution {
         }
         max = a[0];
         for (i = 0; i < a.length; i++) {
-            if(max < a[i]) {
+            if (max < a[i]) {
                 max = a[i];
             }
 
