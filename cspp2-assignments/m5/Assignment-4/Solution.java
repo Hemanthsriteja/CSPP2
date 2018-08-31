@@ -11,17 +11,22 @@ import java.util.Scanner;
  */
 
 public class Solution {
+    private Solution() {
+        /**.
+         * { item_description }
+         */
+    }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
-    public final static void main(final String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String reverse = reverseString(s);
-        System.out.println(reverse);    
+        System.out.println(reverse);
     }
     /**.
      * { function_description }
