@@ -1,13 +1,12 @@
+/**.
+ * { item_description }
+ */
 
-import java.util.Scanner;
+import java.util.*;
 /**.
  * { item_description }
  */
 public final class Solution {
-    /**.
-     * { item_description }
-     */
-
     /**.
      * Constructs the object.
      */
