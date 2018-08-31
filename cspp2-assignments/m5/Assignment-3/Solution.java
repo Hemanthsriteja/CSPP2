@@ -23,13 +23,10 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args)
+    public final static void main(String[] args) {
     /**.
      * { item_description }
      */
-
-
-    {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i = 0;i <= n; i++){
