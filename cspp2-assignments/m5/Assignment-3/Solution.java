@@ -23,17 +23,17 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public final static void main(String[] args) {
+    public  static void main(final String[] args) {
     /**.
      * { item_description }
      */
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for(int i = 0;i <= n; i++){
+        for (int i = 0; i <= n; i++) {
             String s = sc.nextLine();
             int res = 0;
-            if(!s.isEmpty()){
-                res = binaryToDecimal(s);//Write binaryToDecimal function
+            if (!s.isEmpty()) {
+                res = binaryToDecimal(s); //Write binaryToDecimal function
                 System.out.println(res);
         }
     }
