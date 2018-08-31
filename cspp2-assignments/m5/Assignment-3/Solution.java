@@ -14,10 +14,11 @@ public class Solution
 		for(int i=0;i<=n;i++){
 			String s=sc.nextLine();
 		    int res = 0;
-		    if(!s.isEmpty())
+		    if(!s.isEmpty()){
 			    res = binaryToDecimal(s);//Write binaryToDecimal function
-			System.out.println(res);
+			    System.out.println(res);
 		}
+	}
 	}
 	public static int binaryToDecimal(String res) {
 		int dec = Integer.parseInt(res,2);
