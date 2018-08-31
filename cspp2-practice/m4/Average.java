@@ -1,3 +1,6 @@
+/**.
+ * { item_description }
+ */
 import java.util.*;
 class Average {
 	public static void main(String[] args) {
