@@ -19,13 +19,13 @@
          */
         static void oddComposites(final int n) {
         int c = 0;
-        for (int i = 3; i < n; i++ ) {
-            if(i%2 != 0) {
-                c = 0 ;
+        for (int i = 3; i < n; i++) {
+            if (i % 2 != 0) {
+                c = 0;
                 //System.out.println(c);
-                for (int j = 3; j<i; j++) {
-                    if (i%j == 0) {
-                        c++ ;
+                for (int j = 1*3; j < i; j++) {
+                    if (i % j == 0) {
+                        c++;
                         //System.out.println(c);
             }
                     }if (c > 0) {
