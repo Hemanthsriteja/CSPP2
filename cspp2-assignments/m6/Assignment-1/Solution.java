@@ -26,8 +26,10 @@ public final class Solution {
 			for (int j=3; j<i ; j++) {
 				if (i%j==0) {
 					c++;
-					System.out.println(c);
-				}
+					//System.out.println(c);
+		}
+				}if (c>0) {
+					System.out.println(i);
 			}
 		}
 	}
