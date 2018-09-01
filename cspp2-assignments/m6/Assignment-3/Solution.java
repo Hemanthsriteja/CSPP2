@@ -12,6 +12,8 @@ final class Solution {
     private Solution() {
         //not used
     }
+
+
     /**
      * Function to replace each element
      *  of the given char array that matches the given
@@ -23,15 +25,17 @@ final class Solution {
      *
      * @return     new character array with replaced characters
      */
-  //   static char[] replaceAll(final char[] charArray,
-  //       final char oldChar, final char newChar) {
+    static char[] replaceAll(final char[] charArray,
+        final char oldChar, final char newChar) {
+	// write your code here
+     for (int i = 0; i < charArray.length - 1; i++) {
+            if (charArray[i] == oldChar) {
+                charArray[i] = newChar;
+            }
+        }
+        return charArray;
 
-
-
-  // //       char[] charArra = charArray.toCharArray();
-  // //       //charArray = oldChar.replace(newChar, oldChar);
-	 // // return charArra;
-  //   }
+    }
     /**
      * Main function.
      *
@@ -43,11 +47,10 @@ final class Solution {
         char[] charArray = new char[n];
         for (int i = 0; i < n; i++) {
             charArray[i] = scan.next().charAt(0);
-            System.out.println(charArray[i]);
         }
-        // char oldChar = scan.next().charAt(0);
-        // char newChar = scan.next().charAt(0);
-        // char[] newCharArray = replaceAll(charArray, oldChar, newChar);
-        // System.out.println(Arrays.toString(newCharArray));
+        char oldChar = scan.next().charAt(0);
+        char newChar = scan.next().charAt(0);
+        char[] newCharArray = replaceAll(charArray, oldChar, newChar);
+        System.out.println(Arrays.toString(newCharArray));
     }
 }
