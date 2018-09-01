@@ -22,7 +22,13 @@ public final class Solution {
 	for (int i = 3; i<n ; i++ ) {
 		if(i%2 != 0) {
 			c=0 ;
-			System.out.println(c);
+			//System.out.println(c);
+			for (int j=3; j<i ; j++) {
+				if (i%j==0) {
+					c++;
+					System.out.println(c);
+				}
+			}
 		}
 	}
     }
