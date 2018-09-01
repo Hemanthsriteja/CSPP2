@@ -26,7 +26,11 @@ final class Solution {
 
 	// write ypur code here
         int [][]s = new int[rows][columns];
+        // if (s[rows][columns] > 0 && s[rows][columns]<50) {
+        //     System.out.println("0");
+        // }
         return s;
+
 
 	
     }
