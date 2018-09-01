@@ -12,6 +12,13 @@
         private Solution() {
             //not used
         }
+        /**.
+         * { var_description }
+         */
+        private static final int THREE = 3;
+        /**.
+         * { item_description }
+         */
         /**
          * Prints the odd composite numbers between 2 and n.
          *
@@ -19,7 +26,7 @@
          */
         static void oddComposites(final int n) {
         int c = 0;
-        for (int i = 3; i < n; i++) {
+        for (int i = THREE; i < n; i++) {
             if (i % 2 != 0) {
                 c = 0;
                 //System.out.println(c);
@@ -28,7 +35,7 @@
                         c++;
                         //System.out.println(c);
             }
-                    } 
+                    }
                     if (c > 0) {
                         System.out.println(i);
                 }
