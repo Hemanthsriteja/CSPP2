@@ -25,13 +25,13 @@ final class Solution {
     static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
 
 	// write ypur code here
-        final int h = 100, f = 50;
+        final int c = 100, d = 50;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-            int temp = a[i][j] % h;
+            int temp = a[i][j] % c;
             int nearest = 0;
-            if (temp >= f) {
-            nearest = a[i][j] - temp + h;
+            if (temp >= d) {
+            nearest = a[i][j] - temp + c;
             a[i][j] = nearest;
             } else {
              nearest = a[i][j] - temp;
