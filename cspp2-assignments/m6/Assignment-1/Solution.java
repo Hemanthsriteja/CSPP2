@@ -30,7 +30,7 @@
             if (i % 2 != 0) {
                 c = 0;
                 //System.out.println(c);
-                for (int j = 3; j < i; j++) {
+                for (int j = THREE; j < i; j++) {
                     if (i % j == 0) {
                         c++;
                         //System.out.println(c);
@@ -52,4 +52,5 @@
             oddComposites(n);
         }
     }
+
 
