@@ -4,7 +4,7 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 /**.
- * List of .
+ * List of
  */
 public class List {
     /**.
@@ -107,7 +107,7 @@ public class List {
      * Is it the same as the end of the array?
      * Think about how you can use the size variable to add item
      * to the list.
-     * 
+     *
      * The method returns void (nothing)
      */
     /**.
@@ -123,7 +123,7 @@ public class List {
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
-     * 
+     *
      * The method returns an int. Empty list should return 0.
      */
     /**.
@@ -142,7 +142,7 @@ public class List {
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -171,7 +171,7 @@ public class List {
 
 
         for (int i = index; i < size - 1; i++) {
-            a[i] = a[i+1];            
+            a[i] = a[i + 1];
         }
         a[size - 1] = 0;
         size--;
@@ -214,7 +214,7 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -235,12 +235,12 @@ public class List {
          * { var_description }
          */
         String str = "[";
-        for (int i = 0; i < size-1; i++) {
-            str = str + a[i] + ",";           
+        for (int i = 0; i < size - 1; i++) {
+            str = str + a[i] + ",";
         }
         str = str + a[size-1] + "]";
         return str;
-    } 
+    }
     
     /*
      * Contains return true if the list has
@@ -263,9 +263,7 @@ public class List {
         for (int element : a) {
             if (element == item) {
                 return true;
-                
-            }
-            
+            }  
         }
         return false;
     }
@@ -289,11 +287,8 @@ public class List {
         for (int i = 0; i < a.length - 1; i++) {
             if (a[i] == item) {
                 return i;
-                
             }
-            
         }
-        
         return -1;
     }
     /**.
@@ -340,7 +335,7 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                if((Integer.parseInt(tokens[1]) < l.size)) {
+                if ((Integer.parseInt(tokens[1]) < l.size)) {
                     System.out.println(l.get(Integer.parseInt(tokens[1])));
                 }
                 break;
