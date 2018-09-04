@@ -1,7 +1,15 @@
+/**.
+ * { item_description }
+ */
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-
+/**.
+ * List of .
+ */
 public class List {
+    /**.
+     * Constructs the object.
+     */    
     //Implement all the methods mentioned to build a ListADT
 
     /*
@@ -58,8 +66,17 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
+    /**.
+     * { var_description }
+     */
     private int[] a;
+    /**.
+     * { var_description }
+     */
     private int size;
+    /**.
+     * Constructs the object.
+     */
     public List() {
 
         // what are the two variables to be initialized here?
@@ -87,6 +104,11 @@ public class List {
      * to the list.
      * 
      * The method returns void (nothing)
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
      */
     public void add(int item) {
         a[size++] = item;
@@ -128,12 +150,12 @@ public class List {
         if (index < size) {
 
 
-        for (int i=index;i < size-1;i++) {
+        for (int i = index; i < size-1; i++) {
             a[i] = a[i+1];            
         }
         a[size-1] = 0;
         size--;
-        }else {
+        } else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -176,10 +198,10 @@ public class List {
      */
     public String toString() {
         String str = "[";
-        for (int i = 0;i < size-1;i++) {
+        for (int i = 0; i < size-1; i++) {
             str = str + a[i] + ",";           
         }
-        str = str + a[size-1]+"]";
+        str = str + a[size-1] + "]";
         return str;
     } 
     
@@ -206,7 +228,7 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(int item) {
-        for (int i=0;i < a.length-1;i++) {
+        for (int i = 0; i < a.length - 1; i++) {
             if (a[i] == item) {
                 return i;
                 
