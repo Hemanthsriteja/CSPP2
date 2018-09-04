@@ -77,7 +77,13 @@ public class List {
      * Constructs the object.
      */
     private static final int T_N = 10;
+    /**.
+     * Constructs the object.
+     */
     public List() {
+        /**.
+         * { item_description }
+         */
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
@@ -120,8 +126,15 @@ public class List {
      * 
      * The method returns an int. Empty list should return 0.
      */
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
-        // replace the code below to implement the size method
+        /**.
+         * { item_description }
+         */
         return size;
     }
 
@@ -145,7 +158,15 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     */
     public void remove(final int index) {
+        /**.
+         * { item_description }
+         */
         if (index < size) {
 
 
@@ -170,8 +191,17 @@ public class List {
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
      */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int get(final int index) {
-        // Replace the code below to write the code for get
+        /**.
+         * { item_description }
+         */
         return a[index];
     }
 
@@ -195,7 +225,15 @@ public class List {
      * not all the elements of the array.
      *
      */
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
+        /**.
+         * { var_description }
+         */
         String str = "[";
         for (int i = 0; i < size-1; i++) {
             str = str + a[i] + ",";           
@@ -210,8 +248,19 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final int item) {
-        for (int element:a) {
+        /**.
+         * { item_description }
+         */
+
+        for (int element : a) {
             if (element == item) {
                 return true;
                 
@@ -226,7 +275,17 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
+    /**.
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int indexOf(final int item) {
+        /**.
+         * { item_description }
+         */
         for (int i = 0; i < a.length - 1; i++) {
             if (a[i] == item) {
                 return i;
@@ -237,9 +296,16 @@ public class List {
         
         return -1;
     }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
 
     public static void main(final String[] args) {
-        // create an object of the list to invoke methods on it
+        /**.
+         * { var_description }
+         */
         List l = new List();
 
         // code to read the test cases input file
