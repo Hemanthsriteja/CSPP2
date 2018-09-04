@@ -188,7 +188,7 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
     /**.
@@ -238,10 +238,9 @@ public class List {
         for (int i = 0; i < size - 1; i++) {
             str = str + a[i] + ",";
         }
-        str = str + a[size-1] + "]";
+        str = str + a[size - 1] + "]";
         return str;
     }
-    
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -263,13 +262,13 @@ public class List {
         for (int element : a) {
             if (element == item) {
                 return true;
-            }  
+            }
         }
         return false;
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
@@ -342,7 +341,10 @@ public class List {
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                default:
+                break;
             }
         }
     }
 }
+
