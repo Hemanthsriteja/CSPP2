@@ -2,7 +2,7 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -58,6 +58,8 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
+    private int[] a;
+    private int size;
     public List() {
 
         // what are the two variables to be initialized here?
@@ -70,6 +72,8 @@ public class List {
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
+        size = 0;
+        a = new int[10];
 
     }
     
@@ -85,7 +89,7 @@ public class List {
      * The method returns void (nothing)
      */
     public void add(int item) {
-        //Inserts the specified element at the end of the list.
+        a[size++] = item;
     }
 
     /*
@@ -97,7 +101,7 @@ public class List {
      */
     public int size() {
         // replace the code below to implement the size method
-        return -1;
+        return size;
     }
 
     /*
@@ -112,7 +116,7 @@ public class List {
      * moved to the left by one position.
      * Here is an example:
      * array = [1,2,3,0,0,0,0,0,0,0]
-     * remove(1) would remove the item 2 which is at index position 1.
+     * remove(2) would remove the item 2
      * But how do you remove the item from an array?
      * Well, the way to remove it is to move all
      * the items, that are to the right of the removed item, to the left
@@ -121,8 +125,11 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-        // write the logic for remove here.
-        // Think about what to do to the size variable.
+        for (int i=index;i < size-1;i++) {
+            a[i] = a[i+1];            
+        }
+        a[size-1] = 0;
+        size--;
     }
 
     /*
@@ -138,7 +145,7 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-        return -1;
+        return a[index];
     }
 
     /*
@@ -162,8 +169,12 @@ public class List {
      *
      */
     public String toString() {
-        // Replace the code below
-        return "print the list";
+        String str = "[";
+        for (int i = 0;i < size-1;i++) {
+            str = str + a[i] + ",";           
+        }
+        str = str + a[size-1]+"]";
+        return str;
     } 
     
     /*
@@ -173,8 +184,14 @@ public class List {
      * the item exists and otherwise false
      */
     public boolean contains(int item) {
-        // Replace the code below
-        return true;
+        for (int element:a) {
+            if (element == item) {
+                return true;
+                
+            }
+            
+        }
+        return false;
     }
 
     /*
@@ -183,11 +200,18 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(int item) {
-        // Replace the code below
+        for (int i=0;i < a.length-1;i++) {
+            if (a[i] == item) {
+                return i;
+                
+            }
+            
+        }
+        
         return -1;
     }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -214,7 +238,7 @@ public class List {
                 // print the list (implement toString for this to work)
                 // expected format is [item-1,item-2,...,item-n]
                 // review the output testcase file
-                System.out.println(l);
+                System.out.println(l.toString());
                 break;
                 case "remove":
                 l.remove(Integer.parseInt(tokens[1]));
@@ -230,5 +254,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
