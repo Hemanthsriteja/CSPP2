@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class List {
     /**.
      * Constructs the object.
-     */    
+     */
     //Implement all the methods mentioned to build a ListADT
 
     /*
@@ -33,7 +33,6 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -55,7 +54,7 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
@@ -77,6 +76,7 @@ public class List {
     /**.
      * Constructs the object.
      */
+    private static final int T_N = 10;
     public List() {
 
         // what are the two variables to be initialized here?
@@ -90,10 +90,9 @@ public class List {
         // An empty list has how many items?
         // That is the initial value to use for size.
         size = 0;
-        a = new int[10];
+        a = new int[T_N];
 
     }
-    
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -110,7 +109,7 @@ public class List {
      *
      * @param      item  The item
      */
-    public void add(int item) {
+    public void add(final int item) {
         a[size++] = item;
     }
 
@@ -146,14 +145,14 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         if (index < size) {
 
 
-        for (int i = index; i < size-1; i++) {
+        for (int i = index; i < size - 1; i++) {
             a[i] = a[i+1];            
         }
-        a[size-1] = 0;
+        a[size - 1] = 0;
         size--;
         } else {
             System.out.println("Invalid Position Exception");
@@ -171,7 +170,7 @@ public class List {
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
         return a[index];
     }
@@ -211,7 +210,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         for (int element:a) {
             if (element == item) {
                 return true;
@@ -227,7 +226,7 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for (int i = 0; i < a.length - 1; i++) {
             if (a[i] == item) {
                 return i;
@@ -239,7 +238,7 @@ public class List {
         return -1;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
