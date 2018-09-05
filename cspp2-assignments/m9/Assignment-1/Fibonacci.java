@@ -20,6 +20,15 @@ import java.util.Scanner;
  * Class for fibonacci.
  */
 public class Fibonacci {
+    /**.
+     * Constructs the object.
+     */
+    private Fibonacci() {
+    /**.
+     * { item_description }
+     */
+
+    }
     /*
      * fib is a static method takes a argument n
      * n is the count of the fibonacci numbers to be generated.
