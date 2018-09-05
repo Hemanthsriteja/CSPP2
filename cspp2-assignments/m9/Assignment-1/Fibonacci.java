@@ -32,7 +32,7 @@ public class Fibonacci {
         fib1.add(0);
         fib1.add(1);
         for (int i = 2; i < n; i++) {
-            int fib2 = fib1.get(i-1) + fib1.get(i-2);
+            int fib2 = fib1.get(i - 1) + fib1.get(i - 2);
             fib1.add(fib2);
 
         }
@@ -45,13 +45,13 @@ public class Fibonacci {
         //     c = a + b;
         //     a = b;
         //     b = c;
-        //     return fib(n-1) + fib(n-2); 
+        //     return fib(n-1) + fib(n-2);
         // }
-        
+
 
     }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
