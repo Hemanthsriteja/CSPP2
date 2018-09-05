@@ -17,8 +17,7 @@ import java.util.Scanner;
  *
  */
 
-public class Fibonacci
-{
+public class Fibonacci {
     /*
      * fib is a static method takes a argument n
      * n is the count of the fibonacci numbers to be generated.
@@ -32,7 +31,7 @@ public class Fibonacci
         List fib1 = new List(n);
         fib1.add(0);
         fib1.add(1);
-        for (int i=2; i < n; i++) {
+        for (int i = 2; i < n; i++) {
             int fib2 = fib1.get(i-1) + fib1.get(i-2);
             fib1.add(fib2);
 
