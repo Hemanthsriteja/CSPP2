@@ -32,7 +32,7 @@ public class Fibonacci
         List fib1 = new List();
         fib1.add(0);
         fib1.add(1);
-        for (int i=2; i <= n; i++) {
+        for (int i=2; i < n; i++) {
             int fib2 = fib1.get(i-1) + fib1.get(i-2);
             fib1.add(fib2);
 
