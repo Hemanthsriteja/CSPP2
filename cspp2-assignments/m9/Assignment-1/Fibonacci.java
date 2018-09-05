@@ -25,9 +25,15 @@ public class Fibonacci {
      *
      * Look for the hint.txt if some of the testcases fail.
      */
+    /**.
+     * { function_description }
+     *
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static List fib(final int n) {
 
-    public static List fib(int n) {
-        
         List fib1 = new List(n);
         fib1.add(0);
         fib1.add(1);
@@ -50,8 +56,12 @@ public class Fibonacci {
 
 
     }
-
-    public static void main(String[] args) {
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
