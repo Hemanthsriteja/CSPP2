@@ -70,7 +70,7 @@ class Set {
     public static int intersection(final Set s) {
         return 0;
     }
-    public static int retainAll(int[] item) {
+    public static int retainAll(final int[] item) {
         return 0;
     }
     // public int[][] cartesianProduct(final Set s) {
@@ -81,7 +81,7 @@ class Set {
      *
      * @param      item  The item
      */
-    public void add(int[] item) {
+    public void add(final int[] item) {
 
     }
 
