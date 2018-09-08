@@ -75,9 +75,23 @@ class Set {
         }
         return false;
     }
+    /**.
+     * { function_description }
+     *
+     * @param      s     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static int intersection(final Set s) {
         return 0;
     }
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static int retainAll(final int[] item) {
         return 0;
     }
