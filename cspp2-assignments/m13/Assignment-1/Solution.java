@@ -67,11 +67,11 @@ class Set {
         }
         return false;
     }
-    public int intersection(final Set s)
+    public static int intersection(final Set s)
     {
         return 0;
     }
-    public int retainAll(int[] item)
+    public static int retainAll(int[] item)
     {
         return 0;
     }
@@ -104,7 +104,7 @@ public final static class Solution {
      *
      * @return     { int array from the given string }
      */
-    public  int[] intArray(final String s) {
+    public static  int[] intArray(final String s) {
         String input = s;
         if (input.equals("[]")) {
             return new int[0];
@@ -121,7 +121,7 @@ public final static class Solution {
      *
      * @param      args  The arguments
      */
-    public  void main(final String[] args) {
+    public static void main(final String[] args) {
         // instantiate this set
         Set s = new Set();
         // code to read the test cases input file
