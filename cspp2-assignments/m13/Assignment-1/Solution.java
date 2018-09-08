@@ -9,7 +9,15 @@ import java.util.Arrays;
 class Set {
     //your code goes here...
     //Good luck :-)
+
+
+/**.
+ * { var_description }
+ */
     private int[] set;
+    /**.
+     * { var_description }
+     */
     private int size;
 
 
