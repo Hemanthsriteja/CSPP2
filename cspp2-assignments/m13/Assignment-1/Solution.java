@@ -32,7 +32,7 @@ class Set {
 /**.
  * Constructs the object.
  */
-    public Set() {
+    Set() {
     /**.
      * { item_description }
      */
@@ -107,7 +107,7 @@ class Set {
     //     return size;
     // }
     /**.
-     * { function_description }
+     * { add function }
      *
      * @param      item  The item
      */
