@@ -108,6 +108,14 @@ class Set {
      * @param      item  The item
      */
     public void add(final int[] item) {
+        int len = item.length + size;
+        int temp = 0;
+        for (int i = size; i < len; i++) {
+            set[i] = item[temp];
+            temp++;
+        }
+        size = len;
+
 
     }
 
