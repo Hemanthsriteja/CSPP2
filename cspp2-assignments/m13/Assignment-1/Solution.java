@@ -19,6 +19,14 @@ class Set {
      * { var_description }
      */
     private int size;
+    /**.
+     * { var_description }
+     */
+    private static final int T_Y = 20;
+    /**.
+     * { item_description }
+     */
+
 
 
 /**.
@@ -28,7 +36,7 @@ class Set {
     /**.
      * { item_description }
      */
-        set = new int[20];
+        set = new int[T_Y];
         size = 0;
     }
     /**.
