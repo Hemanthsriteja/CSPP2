@@ -7,10 +7,6 @@ import java.util.Arrays;
  * @author :
  */
 class Set {
-    //your code goes here...
-    //Good luck :-)
-
-
 /**.
  * { var_description }
  */
