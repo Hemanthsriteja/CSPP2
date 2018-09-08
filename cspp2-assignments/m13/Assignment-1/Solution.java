@@ -28,7 +28,7 @@ class Set {
      *
      * @param      item  The item
      */
-    public void add(int item) {
+    public void add(final int item) {
         set[ size++ ] = item;
     }
     /**.
@@ -46,10 +46,10 @@ class Set {
      */
     public String toString() {
         String str = "{";
-        for (int  i = 0; i < size-1; i++) {
+        for (int  i = 0; i < size - 1; i++) {
             str = str + set[i] + ",";
         }
-        str = str + set[size-1] + "}";
+        str = str + set[size - 1] + "}";
         return str;
     }
     /**.
@@ -67,12 +67,10 @@ class Set {
         }
         return false;
     }
-    public static int intersection(final Set s)
-    {
+    public static int intersection(final Set s) {
         return 0;
     }
-    public static int retainAll(int[] item)
-    {
+    public static int retainAll(int[] item) {
         return 0;
     }
     // public int[][] cartesianProduct(final Set s) {
