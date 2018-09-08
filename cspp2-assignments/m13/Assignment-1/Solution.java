@@ -118,7 +118,7 @@ class Set {
 /**
  * Solution class for code-eval.
  */
-public final static class Solution {
+public static final class Solution {
     /**
      * Constructs the object.
      */
