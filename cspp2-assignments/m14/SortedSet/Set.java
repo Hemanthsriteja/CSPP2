@@ -12,12 +12,12 @@ public class Set {
     /**
      * holds the elemtns in this Set array.
      */
-    private int[] set;
+    public int[] set;
 
     /**
      * indicates the number of elememnts of this set.
      */
-    private int size;
+    public int size;
 
     /**
      * Default constructor to create an array with the szie 10.
@@ -48,33 +48,12 @@ public class Set {
     private void resize() {
         set = java.util.Arrays.copyOf(set, size * 2);
     }
-
     /**
-     * add all elements of the array to this Set.
-     * @param arr as an arr to be added in this set,
-     *            if the element is not present in this set.
+     *@param arr
      */
-    public void add(int[] arr) {
+    public void add(final int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             add(arr[i]);
-        }
-    }
-    /**.
-     * { function_description }
-     *
-     * @param      index  The index
-     * @param      item   The item
-     */
-    public void add(final int index, final int item) {
-         // write the logic
-        if (index < 0) {
-            System.out.println("Negative Index Exception");
-        } else {
-            for (int i = size; i > index; i--) {
-                set[i] = set[i - 1];
-            }
-        set[index] = item;
-        size++;
         }
     }
 
@@ -84,7 +63,7 @@ public class Set {
      * @return the result that contains the common
      * elements of the two sets.
      */
-    public Set intersection(Set other) {
+    public Set intersection(final Set other) {
         Set result = new Set();
         for (int i = 0; i < this.size; i++) {
             if (other.contains(this.get(i))) {
