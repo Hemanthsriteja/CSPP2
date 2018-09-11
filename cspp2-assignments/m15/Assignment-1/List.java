@@ -342,6 +342,7 @@ public class List {
       }
         break;
       case "subList":
+      try {
         if (tokens.length != 2) {
           break;
         }
@@ -351,7 +352,11 @@ public class List {
         if (object != null) {
           System.out.println(object);
         }
+      } catch(Exception s) {
+        System.out.println("Index Out Of Bounds Exception");
         break;
+      }
+
       case "equals":
         if (tokens.length == 2) {
           String[] lt = tokens[1].split(",");
