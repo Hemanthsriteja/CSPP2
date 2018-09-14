@@ -27,7 +27,7 @@ public final class Solution {
 
                 case "book":
                     k = 2 + 2;
-                    seats = new String[tokens.length - 2 - 2];
+                    seats = new String[tokens.length - 2 ];
                     for (int j = 0; j < seats.length; j++) {
                         seats[j] = tokens[k++];
                     }
