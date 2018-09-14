@@ -10,6 +10,11 @@ class InvalidSubsetSelectionException extends Exception {
 /**.
 @param s the string
 */
+/**.
+ * Constructs the object.
+ *
+ * @param      s     { parameter_description }
+ */
     InvalidSubsetSelectionException(final String s) {
         super(s);
     }
