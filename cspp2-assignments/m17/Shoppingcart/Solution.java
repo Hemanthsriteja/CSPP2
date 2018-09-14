@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -18,7 +18,7 @@ class Solution {
         int lines = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < lines; i++) {
             String[] input = sc.nextLine().split(" ");
-            switch(input[0]) {
+            switch (input[0]) {
                 case "Item":
                 String[] tokens = input[1].split(",");
                 shop.addToCatalog(new Item(tokens[0], tokens[1], tokens[2]));
@@ -37,7 +37,8 @@ class Solution {
                 System.out.println("totalAmount: " + shop.getTotalAmount());
                 break;
                 case "payableAmount":
-                System.out.println("Payable amount: " + shop.getPayableAmount());
+                System.out.println("Payable amount: " +
+                 shop.getPayableAmount());
                 break;
                 case "remove":
                 String[] tokens12 = input[1].split(",");
@@ -48,6 +49,8 @@ class Solution {
                 break;
                 case "print":
                 shop.printInvoice();
+                break;
+                default :
                 break;
             }
         }
