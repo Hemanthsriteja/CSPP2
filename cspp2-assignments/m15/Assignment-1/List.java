@@ -246,6 +246,13 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      **/
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final int item) {
         // Replace the code below
         return indexOf(item) == -1;
