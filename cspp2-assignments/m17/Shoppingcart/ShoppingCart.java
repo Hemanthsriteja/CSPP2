@@ -117,7 +117,7 @@ class ShoppingCart{
 		}
 	}
 	void printInvoice(){
-		System.out.println("Name quantity Price");
+		System.out.println("Name   quantity   Price");
 		for(Item s : cart){
 			if(s!=null){
 				if(s.quantity!=0){
