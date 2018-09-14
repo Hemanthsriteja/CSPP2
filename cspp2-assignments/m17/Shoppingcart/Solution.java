@@ -22,10 +22,10 @@ class Solution {
                 shop.showCart();
                 break;
                 case "totalAmount":
-                System.out.println("TotalAmount: "+ shop.getTotalAmount());
+                System.out.println("totalAmount: "+ shop.getTotalAmount());
                 break;
                 case "payableAmount":
-                System.out.println("payable amount: "+ shop.getPayableAmount());
+                System.out.println("Payable amount: "+ shop.getPayableAmount());
                 break;
                 case "remove":
                 String[] tokens12 = input[1].split(",");
