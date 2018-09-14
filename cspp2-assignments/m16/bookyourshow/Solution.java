@@ -10,7 +10,11 @@ public final class Solution {
     private Solution() {
 
     }
-
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         BookYourShow bys = new BookYourShow();
         Scanner scan = new Scanner(System.in);
