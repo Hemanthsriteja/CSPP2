@@ -100,7 +100,7 @@ class Set {
         return 0;
     }
     // public int[][] cartesianProduct(final Set s) {
-    //     return size;
+    //     return ;
     // }
     /**.
      * { add function }
