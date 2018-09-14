@@ -2,6 +2,10 @@ import java.util.Scanner;
 import java.io.BufferedInputStream;
 import java.util.Arrays;
 /**. Sortedset is the class */
+
+/**.
+ * Class for sortedset.
+ */
 class Sortedset extends Set {
     /**.
 @param fromElement the starting element.
