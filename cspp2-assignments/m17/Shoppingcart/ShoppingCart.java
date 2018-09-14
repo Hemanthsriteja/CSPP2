@@ -121,7 +121,7 @@ class ShoppingCart{
 		for(Item s : cart){
 			if(s!=null){
 				if(s.quantity!=0){
-			System.out.println(s.name+" "+s.quantity+" "+getPrice(s));
+			System.out.println(s.name+""+s.quantity+""+getPrice(s));
 		}
 		}
 		}
