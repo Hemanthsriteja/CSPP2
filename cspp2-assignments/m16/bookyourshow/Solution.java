@@ -18,7 +18,7 @@ public final class Solution {
             switch (check[0]) {
                 case "add":
                     int k = 2;
-                    String[] seats = new String[tokens.length - 2 - 2 ];
+                    String[] seats = new String[tokens.length - 2];
                     for (int j = 0; j < seats.length; j++) {
                         seats[j] = tokens[k++];
                     }
@@ -27,7 +27,7 @@ public final class Solution {
 
                 case "book":
                     k = 2 + 2;
-                    seats = new String[tokens.length - 2 ];
+                    seats = new String[tokens.length - 2 - 2];
                     for (int j = 0; j < seats.length; j++) {
                         seats[j] = tokens[k++];
                     }
