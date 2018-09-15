@@ -127,6 +127,9 @@ class Quiz {
      */
 
     protected Quiz() {
+        /**.
+         * { item_description }
+         */
         this.questions = questions;
         this.choice = choice;
         this.penalty = penalty;
