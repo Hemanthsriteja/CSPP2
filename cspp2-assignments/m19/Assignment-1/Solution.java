@@ -63,10 +63,7 @@ public final class Solution {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-        String str = s.nextLine();
-        for (int i = 0; i < questionCount; i++) {
-            String[] input = s.nextLine().split(":");
-        }
+
 
     }
 
