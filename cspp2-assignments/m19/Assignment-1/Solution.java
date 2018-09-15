@@ -100,10 +100,25 @@ class Quiz {
      * Constructs the object.
      */
     private String[] questions;
+    /**.
+     * { var_description }
+     */
     private String[] choice;
+    /**.
+     * { var_description }
+     */
     private int[] penalty;
+    /**.
+     * { var_description }
+     */
     private int[] maxmark;
+    /**.
+     * { var_description }
+     */
     private int[] score;
+    /**.
+     * Constructs the object.
+     */
 
     protected Quiz() {
         this.questions = questions;
