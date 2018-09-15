@@ -96,7 +96,20 @@ class Quiz {
     /**.
      * Constructs the object.
      */
+    String[] questions;
+    String[] choice;
+    int[] penalty;
+    int[] maxmark;
+    int[] score;
+
     Quiz() {
+        this.questions = questions;
+        this.choice = choice;
+        this.penalty = penalty;
+        this.maxmark = maxmark;
+        this.score = score;
 
     }
+    //void add
 }
+
