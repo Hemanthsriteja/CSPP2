@@ -68,7 +68,7 @@ public final class Solution {
         } else if (questionCount == 1) {
             System.out.println("Error! Malformed question");
         } else {
-        System.out.println(questionCount+" "+ "questions are added to the quiz");
+        System.out.println(questionCount + " questions are added to the quiz");
         }
 
     }
