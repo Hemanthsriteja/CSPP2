@@ -65,6 +65,10 @@ public final class Solution {
         // add the question objects to the quiz class
         if (questionCount == 0) {
             System.out.println("Quiz does not have questions");
+        } else if (questionCount == 1) {
+            System.out.println("Error! Malformed question");
+        } else {
+            System.out.println(questionCount + "questions are added to the quiz");
         }
 
     }
