@@ -1,7 +1,5 @@
-
 import java.util.Scanner;
 import java.util.Arrays;
-
 /**
   * write your code below this comment
   */
@@ -19,7 +17,6 @@ class Task {
             throw new Exception("Invalid status " + status);
         if (time < 0)
             throw new Exception("Invalid timeToComplete " + time);
-
         this.titles = title;
         this.assignedTo = name;
         this.time1 = time;
@@ -138,8 +135,8 @@ public class TodoistMain {
         }
     }
 
-    /**
-     * Creates a task object.
+    /**.
+     * Creates a task object below.
      *
      * @param      tokens     The tokens
      *
@@ -157,9 +154,8 @@ public class TodoistMain {
         return new Task(
                    title, assignedTo, timeToComplete, important, urgent, status);
     }
-
     /**
-     * main method.
+     * main method given
      *
      * @param      args  The command line arguments
      */
