@@ -29,38 +29,38 @@ class Task {
         this.urgent1 = urgent;
         this.status1 = status;
     }
-    public String gettasktile() {
+    public String getTitle() {
         return this.titles;
     }
-    public String gettaskowner() {
+    public String getAssign() {
         return this.assignedTo;
     }
-    public int gettasktime() {
+    public int getTime() {
         return this.time1;
     }
-    public boolean gettaskimp() {
+    public boolean getImp() {
         return this.important1;
     }
-    public boolean gettaskurgency() {
+    public boolean getUrgent() {
         return this.urgent1;
     }
-    public String gettaskstatus() {
+    public String getStatus() {
         return this.status1;
     }
     public String toString() {
         String important = "";
         String urgent = "";
-        if (gettaskimp()) {
+        if (getImp()) {
             important = "Important";
         } else {
             important = "Not Important";
         }
-        if (gettaskurgency()) {
+        if (getUrgent()) {
             urgent = "Urgent";
         } else {
             urgent = "Not Urgent";
         }
-        return gettasktile() + ", " + gettaskowner() + ", " + gettasktime() + ", " + important + ", " + urgent + ", " + gettaskstatus();
+        return getTitle() + ", " + getAssign() + ", " + getTime() + ", " + important + ", " + urgent + ", " + getStatus();
     }
 }
 
