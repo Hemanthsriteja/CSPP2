@@ -111,15 +111,25 @@ class Task {
         return getTitle() + ", " + getAssign() + ", " + getTime() + ", " + important + ", " + urgent + ", " + getStatus();
     }
 }
-
+/**.
+ * Class for todoist.
+ */
 class Todoist {
     Task[] TaskArray;
     int size;
+    /**.
+     * Constructs the object.
+     */
     Todoist() {
         TaskArray = new Task[10];
         size = 0;
 
     }
+    /**.
+     * Adds a task.
+     *
+     * @param      var   The variable
+     */
     public void addTask(Task var) {
         TaskArray[size++] = var;
     }
@@ -127,8 +137,14 @@ class Todoist {
 /**
  * Class for todoist main.
  */
+/**.
+ * Class for todoist main.
+ */
 public class TodoistMain {
     /**
+     * Starts a test.
+     */
+    /**.
      * Starts a test.
      */
     public static void startTest() {
@@ -196,6 +212,15 @@ public class TodoistMain {
      * @return     Task object
      *
      * @throws     Exception  if task inputs are invalid
+     */
+    /**.
+     * Creates a task.
+     *
+     * @param      tokens     The tokens
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public static Task createTask(final String[] tokens) throws Exception {
         String title = tokens[1];
