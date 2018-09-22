@@ -13,21 +13,13 @@ class Task {
     private boolean urgent1;
     private String status1;
     Task(String title, String name, int time, boolean important, boolean urgent, String status) throws Exception {
-        if (title == null || title.equals("")) throw new Exception("Title not provided");
-        if (!status.equals("todo") && !status.equals("done")) throw new Exception("Invalid status " + status);
-        if (time < 0) throw new Exception("Invalid timeToComplete " + time);
+        if (title == null || title.equals(""))
+            throw new Exception("Title not provided");
+        if (!status.equals("todo") && !status.equals("done"))
+            throw new Exception("Invalid status " + status);
+        if (time < 0)
+            throw new Exception("Invalid timeToComplete " + time);
 
-
-
-        // if(title.equals("")) {
-        //     throw new Exception("Title not provided");
-        // }
-        // if(!(time > 0)) {
-        //     throw new Exception("Invalid timeToComplete " + time);
-        // }
-        // if(!(status.equals("done") || status.equals("todo"))) {
-        //     throw new Exception("Invalid status " + status);
-        // }
         this.titles = title;
         this.assignedTo = name;
         this.time1 = time;
