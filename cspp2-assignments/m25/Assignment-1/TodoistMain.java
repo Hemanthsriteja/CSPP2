@@ -3,6 +3,9 @@ import java.util.Arrays;
 /**
   * write your code below this comment
   */
+/**.
+ * Class for task.
+ */
 class Task {
     private String titles;
     private String assignedTo;
@@ -10,6 +13,16 @@ class Task {
     private boolean important1;
     private boolean urgent1;
     private String status1;
+    /**.
+     * Constructs the object.
+     *
+     * @param      title      The title
+     * @param      name       The name
+     * @param      time       The time
+     * @param      important  The important
+     * @param      urgent     The urgent
+     * @param      status     The status
+     */
     Task(String title, String name, int time, boolean important, boolean urgent, String status) throws Exception {
         if (title == null || title.equals(""))
             throw new Exception("Title not provided");
@@ -24,24 +37,64 @@ class Task {
         this.urgent1 = urgent;
         this.status1 = status;
     }
+    /**.
+     * Gets the title.
+     *
+     * @return     The title.
+     */
     public String getTitle() {
         return this.titles;
     }
+    /**.
+     * Gets the assign.
+     *
+     * @return     The assign.
+     */
     public String getAssign() {
         return this.assignedTo;
     }
+    /**.
+     * Gets the time.
+     *
+     * @return     The time.
+     */
     public int getTime() {
         return this.time1;
     }
+    /**.
+     * Gets the imp.
+     *
+     * @return     The imp.
+     */
+    /**.
+     * Gets the imp.
+     *
+     * @return     The imp.
+     */
     public boolean getImp() {
         return this.important1;
     }
+    /**.
+     * Gets the urgent.
+     *
+     * @return     The urgent.
+     */
     public boolean getUrgent() {
         return this.urgent1;
     }
+    /**.
+     * Gets the status.
+     *
+     * @return     The status.
+     */
     public String getStatus() {
         return this.status1;
     }
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String important = "";
         String urgent = "";
