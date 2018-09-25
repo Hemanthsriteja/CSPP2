@@ -1,10 +1,9 @@
 import java.util.Scanner;
 import java.io.FileReader;
-import java.util.Map;
-import java.util.HashMap;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
+
 /**this class is to maintain.
 *complete details of two files.
 */
@@ -34,30 +33,6 @@ class Data {
         }
         return str;
     }
-    /**
-     * to remove the unwanted characters.
-     *
-     * @param      text  The text
-     *
-     * @return map which contains
-     * frequency of words.
-     */
-    public Map remove(final String text) {
-        text.toLowerCase();
-        text.replaceAll("[0-9_]", "");
-        String[] words = text.split(" ");
-        Map<String, Integer> map = new HashMap<>();
-        for (String element : words) {
-         if (element.length() > 0) {
-            if (!(map.containsKey(element))) {
-                map.put(element, 1);
-            } else {
-                map.put(element, map.get(element) + 1);
-            }
-        }
-    }
-        return map;
-    }
     /**this method is to give the.
      *document distance.
      *@param textOne first file string
@@ -65,32 +40,30 @@ class Data {
      *@return document distance
      */
 
-    public int similarity(final String textOne, final String textTwo) {
-        double numerator = 0;
-        double denominator = 1;
-        double sumOne = 0;
-        double sumTwo = 0;
+    public double stringMatching(final String textOne, final String textTwo) {
+        int lengthOne = textOne.length();
+        int lengthTwo = textTwo.length();
+        double totalLength = lengthOne + lengthTwo;
+        int max = 0;
+        double lcs = 0;
         final int hundred = 100;
-        Map<String, Integer> mapOne = remove(textOne);
-        Map<String, Integer> mapTwo = remove(textTwo);
-        for (String element: mapOne.keySet()) {
-            for (String item: mapTwo.keySet()) {
-                if (element.equals(item)) {
-                    numerator += mapOne.get(element) * mapTwo.get(item);
+        int[][] array = new int[lengthOne][lengthTwo];
+        for (int i = 0; i < lengthOne; i++) {
+            for (int j = 0; j < lengthTwo; j++) {
+                if (textOne.charAt(i) == textTwo.charAt(j)) {
+                    if (i == 0 || j == 0) {
+                        array[i][j] = 1;
+                    } else {
+                        array[i][j] = array[i - 1][j - 1] + 1;
+                    }
+                    if (max < array[i][j]) {
+                        max = array[i][j];
+                    }
                 }
             }
         }
-
-        for (String word: mapOne.keySet()) {
-            sumOne += mapOne.get(word) * mapOne.get(word);
-        }
-        for (String word: mapTwo.keySet()) {
-            sumTwo += mapTwo.get(word) * mapTwo.get(word);
-        }
-        denominator = Math.sqrt(sumOne) * Math.sqrt(sumTwo);
-        double documentDistance = (
-            (numerator / denominator) * hundred);
-        return (int) (documentDistance);
+        lcs = (((max * 2) / totalLength) * hundred);
+        return lcs;
     }
 }
 /** this is the solution class.
@@ -114,16 +87,16 @@ public final class Solution {
         Data obj = new Data();
         File[] fileList = files.listFiles();
         int length = fileList.length;
-        int maxValue = 0;
+        double maxValue = 0;
         final int hundred = 100;
         String result = "";
-        int[][] fileMatrix = new int[length][length];
+        double[][] fileMatrix = new double[length][length];
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
                 if (i == j) {
                     fileMatrix[i][j] = hundred;
                 } else {
-                    fileMatrix[i][j] = obj.similarity(
+                    fileMatrix[i][j] = obj.stringMatching(
                         obj.toText(fileList[i]), obj.toText(fileList[j]));
                     if (maxValue < fileMatrix[i][j]) {
                         maxValue = fileMatrix[i][j];
@@ -142,13 +115,14 @@ public final class Solution {
         for (int i = 0; i < length; i++) {
             System.out.print(fileList[i].getName() + "\t");
             for (int j = 0; j < length; j++) {
-                    System.out.print(fileMatrix[i][j] + "\t\t");
+                    System.out.print(
+                        String.format("%.1f", fileMatrix[i][j]) + "\t\t");
             }
             System.out.println();
         }
      System.out.println(result);
     } catch (NoSuchElementException e) {
-        System.out.println("empty directory");
+        System.out.println("Empty Directory");
     }
     }
 }
